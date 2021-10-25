@@ -14,21 +14,21 @@
                     "targetPort": "1_in"
                 },
                 {
-                    "id": "port_0_to_port_3",
+                    "id": "port_0_to_port_4",
                     "sourceNode": "0",
                     "sourcePort": "0_out",
-                    "targetNode": "3",
-                    "targetPort": "3_in"
+                    "targetNode": "4",
+                    "targetPort": "4_in"
                 },
                 {
-                    "id": "port_3_to_port_2",
-                    "sourceNode": "3",
-                    "sourcePort": "3_out",
+                    "id": "port_4_to_port_2",
+                    "sourceNode": "4",
+                    "sourcePort": "4_out",
                     "targetNode": "2",
                     "targetPort": "2_in"
                 }
             ],
-            "hash": "29b335fff7ddae11448cb4ee87a17d9ee29087d7",
+            "hash": "a90118d175838590e6d9087d28adfccb273b6d24",
             "nodes": {
                 "0": {
                     "data": {
@@ -82,23 +82,39 @@
                     "x": 983,
                     "y": 660
                 },
-                "3": {
+                "4": {
                     "data": {
                         "advanced": {
                             "join": []
                         },
+                        "customFunction": {
+                            "draftMode": false,
+                            "name": "cf_test_6",
+                            "repoName": "test5"
+                        },
                         "functionId": 1,
-                        "functionName": "code_1",
-                        "id": "3",
-                        "inputParameters": [],
-                        "outputVariables": [],
-                        "type": "code"
+                        "functionName": "cf_test_6_1",
+                        "id": "4",
+                        "selectMore": false,
+                        "type": "utility",
+                        "utilities": {
+                            "cf_test_6": {
+                                "description": "",
+                                "fields": [],
+                                "label": "cf_test_6",
+                                "name": "cf_test_6"
+                            }
+                        },
+                        "utilityType": "custom_function",
+                        "values": {
+                            "cf_test_6": {}
+                        }
                     },
                     "errors": {},
-                    "id": "3",
-                    "type": "code",
-                    "x": 604,
-                    "y": 536
+                    "id": "4",
+                    "type": "utility",
+                    "x": 600,
+                    "y": 540
                 }
             },
             "notes": ""
@@ -110,7 +126,7 @@
         "schema": "5.0.3",
         "version": "5.0.1.66250"
     },
-    "create_time": "2021-10-25T20:37:41.638233+00:00",
+    "create_time": "2021-10-25T20:39:20.233239+00:00",
     "draft_mode": false,
     "labels": [
         "events"

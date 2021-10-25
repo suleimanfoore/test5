@@ -11,8 +11,8 @@ from datetime import datetime, timedelta
 def on_start(container):
     phantom.debug('on_start() called')
 
-    # call 'format_1' block
-    format_1(container=container)
+    # call 'code_1' block
+    code_1(container=container)
 
     return
 
@@ -37,6 +37,24 @@ def format_1(action=None, success=None, container=None, results=None, handle=Non
     ################################################################################
 
     phantom.format(container=container, template=template, parameters=parameters, name="format_1")
+
+    return
+
+
+def code_1(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None, custom_function=None, **kwargs):
+    phantom.debug("code_1() called")
+
+    ################################################################################
+    ## Custom Code Start
+    ################################################################################
+
+    # Write your custom code here...
+
+    ################################################################################
+    ## Custom Code End
+    ################################################################################
+
+    format_1(container=container)
 
     return
 
